@@ -1,0 +1,29 @@
+// .featured {
+//     display: flex;
+//     justify-content: center;
+// }
+
+.main-image {
+    img {
+        padding-left: 90px;
+        width: 1000px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    padding-left: 90px;
+}
+
+.sub-product {
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+
+    }
+}

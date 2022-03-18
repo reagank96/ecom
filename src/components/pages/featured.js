@@ -1,5 +1,10 @@
 import React, { Component } from "react";
+import '../../style/featured.scss';
 
+//images
+import crewneck from '../../images/adidas_crewneck.jpg';
+import featured from '../../images/lifestyle.jpg';
+import radtee from '../../images/rad_tee.jpg';
 
 export default class Featured extends Component {
     constructor() {
@@ -8,35 +13,24 @@ export default class Featured extends Component {
    render() {
        return (
            <div className="featured">
-                <h1>homepage</h1>
 
                 <div className="main-image">
-                    <img>featured product</img>
+                    <img src={featured} alt="pic" />
                 </div>
 
-                <div className="sub-product">
-                    <img>1</img>
+                <h1>Featured Products</h1>
+
+                <div className="products">
+                    <div className="sub-product">
+                        <img src={crewneck} alt="pic" />
+                    </div>
+
+                    <div className="sub-product">
+                        <img src={radtee} alt="pic" />
+                    </div>
                 </div>
 
-                <div className="sub-product">
-                    <img>2</img>
-                </div>
-
-                <div className="sub-product">
-                    <img>3</img>
-                </div>
-
-                <div className="sub-product">
-                    <img>4</img>
-                </div>
-
-                <div className="sub-product">
-                    <img>5</img>
-                </div>
-
-                <div className="sub-product">
-                    <img>6</img>
-                </div>
+                
             </div>
         
 
