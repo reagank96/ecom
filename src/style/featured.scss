@@ -12,11 +12,18 @@
     }
 }
 
+.title {
+    margin-top: 60px;
+    text-align: center;
+    color: lightcoral;
+}
+
 .products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 450px;
     padding-left: 90px;
+    padding-top: 60px;
 }
 
 .sub-product {
@@ -24,6 +31,22 @@
         width: 300px;
         height: 300px;
         object-fit: cover;
-
     }
+
 }
+
+.btn {
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    margin-left: 90px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    color: lightgrey;
+
+    &:hover {
+        color: lightcoral;
+    }
+
+  }
